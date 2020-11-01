@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+        <script  nomodule="" src = "https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"> </script> 
+        <title>TP : Un formulaire interactif</title>
+    </head>
+    <body class="main">
+        <header class="container-fluid" id="bandeau1" >
+                <div class="row">
+                    <p class=" col-lg-6 marge_haute marge_basse">Veuiller vérifier le contenu de votre panier</p> 
+                    <a class=" col-lg-6 marge_haute marge_basse" href="index.html"><p>Retour à la page d'accueil</p></a>
+                </div>
+        </header>
+        <section >
+            <h1>ORINOCO</h1>
+            <div id="prix_total"></div>
+            <div id='liste_articles'></div>
+            <div id="boutons_page_produits" class="row">
+                <button class="btn_1" id="continuer_achats"> Retour à la page d'accueil</button>
+                <button class="btn_3" id="vider_panier"> Vider le panier</button>
+            </div>
+            <div id="formulaire">
+                <p class="val-commande">Veuillez compléter le formulaire avant la validation de la commande</p>
+                <form  id="envoi_commande">
+                    <label class="form_col" for="contact_nom">Nom :</label>
+                    <input name="contact_nom" id="contact_nom" type="text" pattern="[A-Z]{1}[a-z]*" required >
+                    <br /><br />
+
+                    <label class="form_col" for="contact_prenom">Prénom :</label>
+                    <input name="contact_prenom" id="contact_prenom" type="text"  pattern="[A-Z]{1}[a-z]*" required>
+                    <br /><br />
+
+                    <label class="form_col" for="contact_adresse">Adresse :</label>
+                    <input name="contact_adresse" id="contact_adresse" type="text" required >
+                    <br /><br />
+
+                    <label class="form_col" for="contact_ville">ville :</label>
+                    <input name="contact_ville" id="contact_ville" type="text" required pattern="[A-Z]{1}[a-z]*" >
+                    <br /><br />
+
+                    <label class="form_col" for="contact_email">Email :</label>
+                    <input name="contact_email" id="contact_email"  type="Email" required >
+                    <br /><br />
+                    
+                    <input id="valider_commande"  type="submit" class="btn_4" value="Valider ma commande" />
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div id="bandeau2" class="container-fluid">
+                <div class="row" >
+                    <div  class="col-lg-4 marge_haute">
+                        <ul  class="">
+                            <li><a href="footer-placeholder.html">Livraisons</a></li>
+                            <li><a href="footer-placeholder.html">Garanties</a></li>
+                            <li><a href="footer-placeholder.html">CGV</a></li>
+                        </ul>
+                    </div>
+                    <div  class="col-lg-4 marge_haute">
+                        <ul  class="">
+                            <li><a href="footer-placeholder.html">Livraisons et retours</a></li>
+                            <li><a href="footer-placeholder.html">Services et garanties</a></li>
+                            <li><a href="footer-placeholder.html">CGV</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 marge_haute">
+                        <ul  class="">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <script src="js/panier.js"></script>
+    </body>
+</html>

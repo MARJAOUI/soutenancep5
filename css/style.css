@@ -1,0 +1,201 @@
+/*///////////////////////////// tronc commun ///////////////////////////////////////*/
+body{
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+#bandeau1{
+	height: auto;
+    background-image: linear-gradient(to right, #eec69c 30%, #a466c0 50%, #945dee 100%);
+    align-items: center;
+    font-size: 1.3em;
+    }
+#bandeau2{
+	height: auto;
+	font-size: 1em;
+	text-decoration: none;
+	 background-image: linear-gradient(to right, #eec69c 30%, #a466c0 50%, #945dee 100%);
+}
+.marge_haute{
+	margin-top: 30px;
+}
+.marge_basse{
+	margin-bottom: 30px;
+}
+ .main{
+ 	background-color: #f1e9d5;
+ }
+ 
+h1{
+	width: 100px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: 'Mansalva', cursive;
+}
+ .product_image1, .product_image2 {
+     cursor: pointer;
+     width :300px;
+     height:300px;
+}
+#suppression_article, #ajouter_panier, #retour_accueil, #mon_panier, #continuer_achats, #vider_panier, #valider_commande{
+	background-image: linear-gradient(to right, #eec69c 30%, #a466c0 50%, #945dee 100%);
+	color: black;
+	width: 180px;
+}
+/*/////////////////////////////////////////   page accueil  ////////////////////////////////////*/
+.lienpanier{
+	text-decoration: none;
+	margin-right: 50px;
+	font-size: 1.3em;
+}
+.entreprise{
+ 	margin: auto;
+ 	text-align: center;
+ }
+ .choix{
+ 	font-size: 1.5em;
+ 	text-align: center;
+ 	color: red;
+ 	margin-top: 80px;
+ 	margin-bottom: 80px;
+ }
+ .product_price1{
+ 	text-align: center;
+ }
+ #div_image_price{
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ }
+ @media (max-width: 786px) {
+  #div_image_price, #boutons_page_produits  {
+    display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-around;
+  }
+}
+ /*  //////////////////////////////// page produits  ////////////////////////////////////////*/
+
+#boutons_page_produits, .product_color2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.product_price, .product_description, .product_name{
+	 width : 300px;
+}
+#product_list2{
+	margin-left: 50px;
+}
+button{
+	width: 160px;
+}
+#product_couleur{
+	width: 120px;
+	text-align: center;
+}
+option{
+	text-align: center;
+}
+/*    ///////////////////////////////// page panier  ///////////////////////////////////// */
+
+#liste_articles{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.image_article3 {
+	width :150px;
+    height:150px;
+}
+.article_panier{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 3px solid brown;
+	color: brown;
+}
+.nom_article3, .prix_article3, .description_articl3{
+	width: 150px;
+	height: 30px;
+	text-align: center;
+}
+#valider_commande{
+	margin-left: 450px;
+	margin-bottom: 50px;
+}
+#prix_total{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-size: 1.5em;
+	color: brown;
+}
+#boutons_page_produits{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#product_list2{
+	color: brown;
+}
+#contact_nom, #contact_prenom, #contact_ville, #contact_adresse, #contact_email{
+	text-align: center;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+/* /////////////////////////confirmation   //////////////////////////////////////*/
+
+#confirmation4 {
+	width: 800px;
+	height: 40px;
+	color: brown;
+	font-size: 1.2em;
+	margin-left: 50px;
+}
+#total4{
+	width: 600px;
+	height: 40px;
+	color: brown;
+	font-size: 1.2em;
+	margin-left: 50px;
+}
+#remerciement{
+	font-size: 1.5em;
+	color: brown;
+	text-align: center;
+}
+#boutons_page_produits_confirmation{
+	margin-bottom: 80px;
+	margin-top: 80px;
+	margin-left: 50px; 
+}
+/* /////////////////////////////  formulaire  /////////////////////////// */  
+.form_col {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px 0px;
+    width: 200px;
+    min-height: 1px;
+    text-align: right;
+}
+#marge_basse{
+	margin-bottom: 0px;
+}
+
+input {
+	padding: 2px;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	outline: none; /* Retire les bordures appliquées par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+}
+input:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+#formulaire{
+	margin-top: 20px;
+}
