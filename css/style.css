@@ -3,13 +3,13 @@ body{
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 }
-#bandeau1{
+#bandeau1{    /*   gestion entete de la page */
 	height: auto;
     background-image: linear-gradient(to right, #eec69c 30%, #a466c0 50%, #945dee 100%);
     align-items: center;
     font-size: 1.3em;
     }
-#bandeau2{
+#bandeau2{    /*   gestion bas de page  */
 	height: auto;
 	font-size: 1em;
 	text-decoration: none;
@@ -37,6 +37,7 @@ h1{
      width :300px;
      height:300px;
 }
+/*  gestion de tous éléments qui font l'objet d'un lien */
 #suppression_article, #ajouter_panier, #retour_accueil, #mon_panier, #continuer_achats, #vider_panier, #valider_commande{
 	background-image: linear-gradient(to right, #eec69c 30%, #a466c0 50%, #945dee 100%);
 	color: black;
@@ -48,7 +49,7 @@ h1{
 	margin-right: 50px;
 	font-size: 1.3em;
 }
-.entreprise{
+.entreprise{     /*   commentaire sur l'entreprise */
  	margin: auto;
  	text-align: center;
  }
@@ -62,12 +63,12 @@ h1{
  .product_price1{
  	text-align: center;
  }
- #div_image_price{
+ #div_image_price{          
  	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
  }
- @media (max-width: 786px) {
+ @media (max-width: 786px) { /* responsive pour affichage des boutons de la page product */
   #div_image_price, #boutons_page_produits  {
     display: flex;
  	flex-direction: column;
@@ -81,7 +82,7 @@ h1{
 	flex-direction: row;
 	justify-content: space-around;
 }
-.product_price, .product_description, .product_name{
+.product_price, .product_description, .product_name{  /*largeur des div du prix du nom et de la description */
 	 width : 300px;
 }
 #product_list2{
@@ -90,7 +91,7 @@ h1{
 button{
 	width: 160px;
 }
-#product_couleur{
+#product_couleur{       /*  personnalisation de la couleur */
 	width: 120px;
 	text-align: center;
 }
@@ -99,16 +100,16 @@ option{
 }
 /*    ///////////////////////////////// page panier  ///////////////////////////////////// */
 
-#liste_articles{
+#liste_articles{      /*  affichage des articles selectionnés en colonne */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.image_article3 {
+.image_article3 {       /*  dimensions d'affchages des photos dans le panier */
 	width :150px;
     height:150px;
 }
-.article_panier{
+.article_panier{   /* gestion des caracteristiques de chaque article du panier */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -116,7 +117,7 @@ option{
 	border: 3px solid brown;
 	color: brown;
 }
-.nom_article3, .prix_article3, .description_articl3{
+.nom_article3, .prix_article3, .description_articl3{    /* dimensions des div contenant prix nom et description */
 	width: 150px;
 	height: 30px;
 	text-align: center;
@@ -139,9 +140,7 @@ option{
 #product_list2{
 	color: brown;
 }
-#contact_nom, #contact_prenom, #contact_ville, #contact_adresse, #contact_email{
-	text-align: center;
-}
+
 
 input:valid {
   border: 2px solid black;
@@ -198,4 +197,7 @@ input:focus {
 }
 #formulaire{
 	margin-top: 20px;
+}
+#contact_nom, #contact_prenom, #contact_ville, #contact_adresse, #contact_email{
+	text-align: center;
 }

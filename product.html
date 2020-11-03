@@ -9,49 +9,50 @@
         <script  nomodule="" src = "https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"> </script> 
         <title>Orinoco</title> 
     </head> 
-    <body class="main"> 
-        <header class="container-fluid" id="bandeau1" >
-            <div class="row">
-                <p class=" col-lg-6 marge_haute marge_basse">Découvrez les caractéristiques de votre article</p> 
+    <body class="main"> <!--commun à tous les fichiers : gestion du backgroundcolor  -->
+        <header class="container-fluid" id="bandeau1" > <!--  .gestion de bootstrap et caracteristiques ENTETE  -->
+            <div class="row">  <!--gestion de bootstrap   -->
+                <p class=" col-lg-6 marge_haute marge_basse">Découvrez les caractéristiques de votre article</p> <!--lien vers la page d'accueil -->
                 <a href="index.html" class=" col-lg-3 marge_haute marge_basse"><p>Retour à la page d'accueil</p></a>
+                <!--lien vers la page panier -->
                 <a href="panier.html" class=" col-lg-3 marge_haute marge_basse">Mon panier<i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
             </div>
         </header>
         <section>
            <h1>ORINOCO</h1>
            <div id="product_list2">
-                <div id="product_color2">
+                <div id="product_color2"> <!-- alignement avec flexbox -->
                     <form>
                         <label for="product_couleur" id="product_label">Selectionner la couleur de votre choix</label><br>
                         <select name="couleur" id="product_couleur"></select>
                     </form>    
                 </div>
            </div>
-           <div id="boutons_page_produits" class="row">
+           <div id="boutons_page_produits" class="row"> <!-- gestion flexbox pour alignement -->
               <p><button class="btn_1 " id="ajouter_panier"> Ajouter au panier</button></p>
               <p><button class="btn_2 " id="retour_accueil"> Retour accueil</button></p>
               <p><button class="btn_3 " id="mon_panier"> Mon panier</button></p>
         </div>
         </section>
         <footer>
-            <div id="bandeau2" class="container-fluid">
-                <div class="row" >
-                    <div  class="col-lg-4 marge_haute">
-                        <ul  class="">
+            <div id="bandeau2" class="container-fluid"> <!--gestion de bootstrap   -->
+                <div class="row" > <!--gestion de bootstrap   -->
+                    <div  class="col-lg-4 marge_haute"> <!--gestion de bootstrap   -->
+                        <ul  class=""> <!--liste a puces pour affichage en colonne   -->
                             <li><a href="footer-placeholder.html">Livraisons</a></li>
                             <li><a href="footer-placeholder.html">Garanties</a></li>
                             <li><a href="footer-placeholder.html">CGV</a></li>
                         </ul>
                     </div>
-                    <div  class="col-lg-4 marge_haute">
-                        <ul  class="">
+                    <div  class="col-lg-4 marge_haute"> <!--gestion de bootstrap   -->
+                        <ul  class=""> <!--liste a puces pour affichage en colonne   -->
                             <li><a href="footer-placeholder.html">Livraisons et retours</a></li>
                             <li><a href="footer-placeholder.html">Services et garanties</a></li>
                             <li><a href="footer-placeholder.html">CGV</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 marge_haute">
-                        <ul  class="">
+                    <div class="col-lg-4 marge_haute"> <!--gestion de bootstrap   -->
+                        <ul  class=""><!-- liste à puce pour affichage en colonne des reseaux sociaux -->
                             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a></li>
                             <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
                             <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a></li>   

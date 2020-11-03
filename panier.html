@@ -9,9 +9,9 @@
         <script  nomodule="" src = "https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"> </script> 
         <title>TP : Un formulaire interactif</title>
     </head>
-    <body class="main">
-        <header class="container-fluid" id="bandeau1" >
-                <div class="row">
+    <body class="main"> <!--commun à tous les fichiers : gestion du backgroundcolor  -->
+        <header class="container-fluid" id="bandeau1" > <!--  .gestion de bootstrap et caracteristiques ENTETE  -->
+                <div class="row"> <!--gestion de bootstrap   -->
                     <p class=" col-lg-6 marge_haute marge_basse">Veuiller vérifier le contenu de votre panier</p> 
                     <a class=" col-lg-6 marge_haute marge_basse" href="index.html"><p>Retour à la page d'accueil</p></a>
                 </div>
@@ -20,7 +20,7 @@
             <h1>ORINOCO</h1>
             <div id="prix_total"></div>
             <div id='liste_articles'></div>
-            <div id="boutons_page_produits" class="row">
+            <div id="boutons_page_produits" class="row"> <!-- gestion alignement avec  flexbox -->
                 <button class="btn_1" id="continuer_achats"> Retour à la page d'accueil</button>
                 <button class="btn_3" id="vider_panier"> Vider le panier</button>
             </div>
@@ -28,11 +28,11 @@
                 <p class="val-commande">Veuillez compléter le formulaire avant la validation de la commande</p>
                 <form  id="envoi_commande">
                     <label class="form_col" for="contact_nom">Nom :</label>
-                    <input name="contact_nom" id="contact_nom" type="text" pattern="[A-Z]{1}[a-z]*" required >
+                    <input name="contact_nom" id="contact_nom" type="text" pattern="[A-Z]{1}[a-z]*" required > <!-- regex pour afficher la premiere lette en MAJ et la suite des caracteres en min -->
                     <br /><br />
 
                     <label class="form_col" for="contact_prenom">Prénom :</label>
-                    <input name="contact_prenom" id="contact_prenom" type="text"  pattern="[A-Z]{1}[a-z]*" required>
+                    <input name="contact_prenom" id="contact_prenom" type="text"  pattern="[A-Z]{1}[a-z]*" required><!-- regex pour afficher la premiere lette en MAJ et la suite des caracteres en min -->
                     <br /><br />
 
                     <label class="form_col" for="contact_adresse">Adresse :</label>
@@ -40,7 +40,7 @@
                     <br /><br />
 
                     <label class="form_col" for="contact_ville">ville :</label>
-                    <input name="contact_ville" id="contact_ville" type="text" required pattern="[A-Z]{1}[a-z]*" >
+                    <input name="contact_ville" id="contact_ville" type="text" required pattern="[A-Z]{1}[a-z]*"><!-- regex pour afficher la premiere lette en MAJ et la suite des caracteres en min -->
                     <br /><br />
 
                     <label class="form_col" for="contact_email">Email :</label>
@@ -52,24 +52,24 @@
             </div>
         </section>
         <footer>
-            <div id="bandeau2" class="container-fluid">
-                <div class="row" >
-                    <div  class="col-lg-4 marge_haute">
-                        <ul  class="">
+            <div id="bandeau2" class="container-fluid"> <!-- gestion bootstrap -->
+                <div class="row" > <!-- gestion bootstrap -->
+                    <div  class="col-lg-4 marge_haute"> <!-- gestion bootstrap -->
+                        <ul  class=""> <!--liste a puces pour affichage en colonne   -->
                             <li><a href="footer-placeholder.html">Livraisons</a></li>
                             <li><a href="footer-placeholder.html">Garanties</a></li>
                             <li><a href="footer-placeholder.html">CGV</a></li>
                         </ul>
                     </div>
-                    <div  class="col-lg-4 marge_haute">
-                        <ul  class="">
+                    <div  class="col-lg-4 marge_haute"> <!-- gestion bootstrap -->
+                        <ul  class=""> <!--liste a puces pour affichage en colonne   -->
                             <li><a href="footer-placeholder.html">Livraisons et retours</a></li>
                             <li><a href="footer-placeholder.html">Services et garanties</a></li>
                             <li><a href="footer-placeholder.html">CGV</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 marge_haute">
-                        <ul  class="">
+                    <div class="col-lg-4 marge_haute"> <!-- gestion bootstrap -->
+                        <ul  class=""><!--liste a puces pour afficher les reseaux en colonne   -->
                             <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a></li>
                             <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
                             <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a></li>   
